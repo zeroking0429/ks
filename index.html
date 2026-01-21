@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>KS 실행기</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>KS (Korean Script)</h2>
+
+    <div class="editor">
+      <div id="lines">1</div>
+      <textarea id="code"></textarea>
+    </div>
+
+    <button onclick="runKS()">실행</button>
+
+    <pre id="output"></pre>
+
+    <button onclick="location.href=`${location.href}/docs`">실행</button>
+
+    <script src="app.js"></script>
+  </body>
+</html>

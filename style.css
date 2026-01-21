@@ -1,0 +1,137 @@
+/* ===== 기본 ===== */
+body {
+  font-family: "JetBrains Mono", "Noto Sans KR", monospace;
+  background: #0e1117;
+  color: #c9d1d9;
+  padding: 36px;
+}
+
+h2 {
+  color: #58a6ff;
+  margin-bottom: 14px;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+}
+
+/* ===== 에디터 래퍼 ===== */
+.editor {
+  display: flex;
+  max-width: 780px;
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  overflow: hidden;
+
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.02),
+    0 12px 28px rgba(0, 0, 0, 0.6);
+}
+
+/* ===== 줄 번호 ===== */
+#lines {
+  background: #0b0f14;
+  color: #6e7681;
+  text-align: right;
+  user-select: none;
+
+  padding: 14px 10px;
+  min-width: 46px;
+  height: 260px;
+
+  font-size: 13px;
+  line-height: 1.7;
+
+  border-right: 1px solid #21262d;
+  overflow: hidden;
+}
+
+#lines .active {
+  color: #58a6ff;
+}
+
+#lines .error {
+  color: #f85149;
+  font-weight: 600;
+}
+
+/* ===== 코드 입력 ===== */
+textarea#code {
+  flex: 1;
+  height: 260px;
+
+  padding: 14px 16px;
+  font-size: 13px;
+  line-height: 1.7;
+
+  background: #0d1117;
+  color: #c9d1d9;
+
+  border: none;
+  outline: none;
+  resize: none;
+
+  caret-color: #58a6ff;
+}
+
+textarea#code::selection {
+  background: rgba(88, 166, 255, 0.35);
+}
+
+/* ===== 실행 버튼 ===== */
+button {
+  margin-top: 14px;
+  padding: 10px 22px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  background: #238636;
+  color: #ffffff;
+
+  border: 1px solid rgba(240, 246, 252, 0.1);
+  border-radius: 6px;
+  cursor: pointer;
+
+  transition: background 0.15s ease, transform 0.05s ease;
+}
+
+button:hover {
+  background: #2ea043;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* ===== 출력 ===== */
+pre#output {
+  margin-top: 22px;
+  padding: 16px;
+
+  max-width: 780px;
+  min-height: 120px;
+
+  background: #0d1117;
+  color: #c9d1d9;
+
+  border: 1px solid #30363d;
+  border-radius: 8px;
+
+  font-size: 13px;
+  line-height: 1.6;
+  overflow-x: auto;
+}
+
+/* 에러 출력 */
+pre#output.error {
+  background: #161b22;
+  color: #f85149;
+  border-color: #f85149;
+}
+
+/* ===== 도움말 ===== */
+.help {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #8b949e;
+}

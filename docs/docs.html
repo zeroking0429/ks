@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>KS 문서</title>
+    <style>
+      body {
+        font-family: "JetBrains Mono", "Noto Sans KR", monospace;
+        background-color: #0b0f14;
+        color: #d0d7de;
+        padding: 40px;
+        line-height: 1.7;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: #7aa2f7;
+        margin-top: 32px;
+      }
+
+      h1 {
+        margin-top: 0;
+      }
+
+      p {
+        margin: 12px 0;
+      }
+
+      code {
+        background: #11161c;
+        padding: 2px 6px;
+        border-radius: 4px;
+        color: #c3e0ff;
+      }
+
+      pre {
+        background: #11161c;
+        border: 1px solid #1f2933;
+        border-radius: 10px;
+        padding: 16px;
+        overflow-x: auto;
+        margin: 16px 0;
+        font-size: 13px;
+      }
+
+      .note {
+        background: #0f141a;
+        border-left: 4px solid #7aa2f7;
+        padding: 12px 16px;
+        border-radius: 6px;
+        margin: 16px 0;
+        color: #c9d1d9;
+      }
+
+      .error {
+        color: #f7768e;
+      }
+
+      a {
+        color: #7aa2f7;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        margin-top: 60px;
+        font-size: 12px;
+        color: #8b949e;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>KS (Korean Script) 문서</h1>
+
+    <p>
+      KS는 <strong>한국어로 배우는 학습용 프로그래밍 언어</strong>입니다.<br />
+      프로그래밍이 처음인 사람도 쉽게 이해할 수 있도록 만들어졌습니다.
+    </p>
+
+    <div class="note">
+      💡 KS는 <strong>인터프리터 언어</strong>이며, 현재는 웹에서 실행됩니다.
+    </div>
+
+    <h2>1. 출력하기</h2>
+
+    <p><code>출력()</code>은 화면에 글자를 보여줍니다.</p>
+
+    <pre><code>출력("안녕")
+출력(123)</code></pre>
+
+    <h2>2. 변수</h2>
+
+    <p>변수는 값을 저장하는 상자입니다.</p>
+
+    <pre><code>나이 = 20
+출력(나이)</code></pre>
+
+    <div class="note">
+      변수 이름은 <strong>한글, 영어, 숫자</strong>를 사용할 수 있습니다.<br />
+      단, 숫자로 시작할 수는 없습니다.
+    </div>
+
+    <h2>3. 입력</h2>
+
+    <p><code>입력()</code>은 사용자에게 값을 입력받습니다.</p>
+
+    <pre><code>이름 = 입력("이름을 입력하세요: ")
+출력(이름)</code></pre>
+
+    <h2>4. 계산</h2>
+
+    <p>KS는 기본적인 사칙연산을 지원합니다.</p>
+
+    <pre><code>a = 10
+b = 20
+출력(a + b)
+출력(a * b)</code></pre>
+
+    <h2>5. 조건문 (만약)</h2>
+
+    <pre><code>나이 = 15
+
+만약 (나이 &gt;= 20) {
+  출력("성인입니다")
+} 아니면 {
+  출력("미성년자입니다")
+}</code></pre>
+
+    <h2>6. 반복문</h2>
+
+    <pre><code>반복 (3) {
+  출력("안녕하세요")
+}</code></pre>
+
+    <h2>7. 에러 메시지</h2>
+
+    <p>KS의 에러 메시지는 최대한 친절하게 보여줍니다.</p>
+
+    <pre class="error"><code>❌ 3번째 줄에서 오류가 있어요
+'이' 은(는) 사용할 수 없는 문자예요</code></pre>
+
+    <div class="note">
+      에러가 나면 <strong>줄 번호</strong>와 <strong>이유</strong>를 함께
+      확인하세요.
+    </div>
+
+    <h2>8. 앞으로 추가될 기능</h2>
+
+    <ul>
+      <li>콘솔 실행 (Python처럼)</li>
+      <li>IDLE 형태 실행기</li>
+      <li>파일 저장 / 불러오기</li>
+      <li>초보자 모드 / 전문가 모드</li>
+    </ul>
+
+    <footer>KS (Korean Script) · 학습용 언어 · Experimental</footer>
+  </body>
+</html>
